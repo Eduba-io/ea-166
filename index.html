@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Homecare Application Inc. | A read on where AI fits in your stack</title>
+<meta name="description" content="A read on where AI actually fits in Homecare Application's stack. And where it doesn't." />
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div data-eduba="banner" style="background:#0a0a0a;color:#f5f5f5;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:0.01em;border-bottom:1px solid #1f1f1f;position:relative;z-index:1000;">
+  <a href="https://eduba.io" target="_blank" rel="noopener" style="color:#f5f5f5;text-decoration:none;font-weight:800;font-size:17px;letter-spacing:-0.02em;line-height:1;">eduba</a>
+  <span style="opacity:0.88;">Prepared by Eduba for Homecare Application Inc. &mdash; Emerge Americas 2026</span>
+</div>
+
+  <a class="skip" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="wrap header-wrap">
+      <div class="brand" aria-label="Homecare Application Inc.">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="36" height="36" focusable="false">
+            <rect x="1" y="1" width="38" height="38" rx="9" fill="var(--primary)"/>
+            <path d="M20 10 L30 19 V30 H24 V22 H16 V30 H10 V19 Z" fill="#FFFFFF"/>
+            <circle cx="20" cy="27" r="1.6" fill="var(--accent)"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Homecare Application</span>
+          <span class="brand-sub">Inc.</span>
+        </span>
+      </div>
+      <nav class="meta-nav" aria-label="Page meta">
+        <span class="pill">Prepared for your team</span>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="wrap hero-wrap">
+        <p class="eyebrow">A working note from Eduba for the team at Homecare Application Inc.</p>
+        <h1 class="h1">A read on where AI actually fits in Homecare Application's stack. And where it doesn't.</h1>
+        <p class="lede">Home-care apps tend to lose time in three places. Shift-note documentation. EVV compliance integrations. Caregiver-to-family matching. Each of those has a small AI slice, a bigger rule-based slice, and a much bigger traditional-code slice. Mixing them up is expensive.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt Creamer</a>
+          <a class="btn btn-ghost" href="#pitch">Read the read</a>
+        </div>
+        <ul class="hero-chips" aria-label="Quick context">
+          <li><span class="chip-dot" aria-hidden="true"></span> HIPAA-aware scoping</li>
+          <li><span class="chip-dot" aria-hidden="true"></span> EVV orchestration</li>
+          <li><span class="chip-dot" aria-hidden="true"></span> Shift-note documentation</li>
+        </ul>
+      </div>
+      <div class="hero-aside" aria-hidden="true">
+        <div class="card-quiet">
+          <p class="card-label">The frame</p>
+          <p class="card-stat"><strong>60</strong> <span>traditional code and database</span></p>
+          <p class="card-stat"><strong>30</strong> <span>rule-based logic</span></p>
+          <p class="card-stat"><strong>10</strong> <span>genuine AI work</span></p>
+          <p class="card-foot">Percentages of a typical product problem.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pitch" id="pitch">
+      <div class="wrap pitch-wrap">
+
+        <article class="prose">
+          <p>You are building in a category where almost every competitor has an answer to the "we use AI" question, and most of those answers fall apart the moment a HIPAA officer or a Medicaid MCO asks a real follow-up. That is the gap this page is about.</p>
+
+          <p>Home-care apps tend to lose time in three places. Shift-note documentation that eats 10 to 15 minutes per visit and still produces text too messy for downstream use. EVV compliance integrations that multiply every time a new state aggregator changes its schema. Caregiver-to-family matching that runs on thin heuristics and produces no-show rates the team feels but cannot quite diagnose. None of these are single-layer problems. Each has a small slice that genuinely belongs to AI, a larger slice that belongs to rule-based logic, and a much larger slice that is traditional code and database work. Mixing them up is expensive.</p>
+
+          <p>Here is the frame we use. Roughly 60% of any product problem lives at the traditional code and database layer. Around 30% is rule-based logic that should be explicit, versioned, and auditable. The remaining 10% is a genuine AI problem, and that 10% is where a thoughtful orchestration pays for itself. For a home-care app specifically, the AI slice is usually structured extraction inside shift notes, match-quality scoring where human signal is thin, and a narrow set of safety flags on care-plan drift. Almost everything else is better served by a query, a rule, or a form field.</p>
+
+          <p>We did a scoped sprint with Feeld, a product company with a CTO who was in the same shape: a technical team with the right instincts and a stack that had quietly accumulated too many LLM calls in places where Postgres would have done the job faster, cheaper, and with better guarantees. The deliverables were a workshop, an Organizational Context Architecture, and a Strategic Operations Framework that gave their team a durable way to answer "where does this feature belong." That is the same thing Homecare Application needs before the next EVV state goes live.</p>
+
+          <p>On the governance side, the relevant paper is the Ethics Engine, a psychometric assessment tool for evaluating ideological and moral patterns in LLMs, with the preprint at <a href="https://arxiv.org/abs/2510.11742" target="_blank" rel="noopener">arxiv.org/abs/2510.11742</a> and the repo at <a href="https://github.com/RinDig/AuditEngine" target="_blank" rel="noopener">github.com/RinDig/AuditEngine</a>. It gives a technical team a defensible answer when a HIPAA officer or an MCO compliance lead asks how the model is being audited.</p>
+        </article>
+
+        <aside class="side-stack" aria-label="Working layers for a home-care app">
+          <h2 class="side-title">Where the work tends to belong</h2>
+          <ol class="layer-list">
+            <li class="layer">
+              <span class="layer-tag" style="--tag: var(--primary)">Traditional code</span>
+              <p>Scheduling, shift state, payroll exports, audit logs, data model around caregivers, clients, and visits.</p>
+            </li>
+            <li class="layer">
+              <span class="layer-tag" style="--tag: var(--secondary)">Rule-based logic</span>
+              <p>EVV per-state rules. Overtime and break thresholds. Care-plan compliance checks. Escalation policies.</p>
+            </li>
+            <li class="layer">
+              <span class="layer-tag" style="--tag: var(--accent)">Genuine AI</span>
+              <p>Structured extraction inside free-text shift notes. Match-quality scoring. Narrow safety flags on care-plan drift.</p>
+            </li>
+          </ol>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="signals">
+      <div class="wrap">
+        <h2 class="h2">Three pains that show up in almost every home-care app</h2>
+        <div class="signal-grid">
+          <article class="signal">
+            <p class="signal-kicker">Documentation</p>
+            <h3 class="signal-h">Shift notes eat 10 to 15 minutes a visit and still produce messy text.</h3>
+            <p>Most teams have tried an LLM auto-fill, hit a HIPAA wall, and shelved it. The useful cut is the small set of structured fields the AI actually needs to touch.</p>
+          </article>
+          <article class="signal">
+            <p class="signal-kicker">Compliance</p>
+            <h3 class="signal-h">Every new EVV state means another one-off integration.</h3>
+            <p>One adapter with rule-based state overrides beats five to eight bespoke integrations and dreading the next state aggregator schema change.</p>
+          </article>
+          <article class="signal">
+            <p class="signal-kicker">Marketplace</p>
+            <h3 class="signal-h">Matching runs on heuristics and no-shows spike in the first two weeks.</h3>
+            <p>Match quality is almost never the LLM problem founders think it is. It is a structured-feature problem with a thin AI layer on top, and wrong-layer choices have usually already burned months.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="wrap proof-wrap">
+        <div class="proof-lede">
+          <p class="eyebrow eyebrow-muted">Closest match in the case library</p>
+          <h2 class="h2">Feeld. A product company whose CTO walked in with one stack model and walked out with a cleaner one.</h2>
+          <p>Scoped sprint. Workshop, advisory calls, an Organizational Context Architecture, and a Strategic Operations Framework. The point was not a new tool. The point was a durable way to answer "where does this feature belong" before the team spent another quarter on the wrong layer.</p>
+        </div>
+        <ul class="proof-stats" aria-label="Reference points from the Eduba book">
+          <li>
+            <span class="num">1,500+</span>
+            <span class="lbl">people trained since May 2025 across enterprise engagements</span>
+          </li>
+          <li>
+            <span class="num">Big Four</span>
+            <span class="lbl">KPMG UK (Big Four), 40+ executives trained</span>
+          </li>
+          <li>
+            <span class="num">95%</span>
+            <span class="lbl">30-day adoption rate on the Pacific Life and Colgate-Palmolive rollouts</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap cta-wrap">
+        <div class="cta-body">
+          <h2 class="h2 cta-h">Thirty minutes with Matt Creamer.</h2>
+          <p class="cta-p">Bring one workflow in your product that you are not sure belongs at the AI layer. We will do a live read of it, layer by layer. You will walk away with a first pass at which parts belong where, and a short list of what to build, what to rule, and what to query.</p>
+          <div class="cta-ctas">
+            <a class="btn btn-primary btn-lg" href="https://calendly.com/thecro-eduba/30min" target="_blank" rel="noopener">Book 30 minutes with Matt</a>
+            <span class="cta-meta">calendly.com/thecro-eduba/30min</span>
+          </div>
+        </div>
+        <div class="cta-card">
+          <p class="card-label">On the call</p>
+          <ul class="check-list">
+            <li>Layer-by-layer read of one workflow you bring.</li>
+            <li>Where an LLM is earning its keep and where a query would do.</li>
+            <li>HIPAA posture notes for the AI slice.</li>
+            <li>A short list to take back to your engineering team.</li>
+          </ul>
+          <p class="card-foot">No deck. No slides. Working session.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap footer-wrap">
+      <p class="footer-line">Prepared by Eduba, <a href="https://eduba.io" target="_blank" rel="noopener">eduba.io</a> &middot; <a href="https://eduba.io/works" target="_blank" rel="noopener">More case studies</a>. For the team at Homecare Application Inc.</p>
+      <p class="footer-fine">This page was put together for a conversation at eMerge Americas 2026. Swap in your own brand tokens any time.</p>
+    </div>
+  </footer>
+<footer data-eduba="footer" style="background:#0a0a0a;color:#dcdcdc;padding:36px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:1.6;border-top:1px solid #1f1f1f;margin-top:48px;">
+  <div style="max-width:1040px;margin:0 auto;">
+    <div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:flex-start;">
+      <div style="min-width:240px;flex:1;">
+        <div style="margin-bottom:6px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#ffffff;text-decoration:none;font-weight:800;font-size:20px;letter-spacing:-0.02em;">eduba</a></div>
+        <div style="opacity:0.85;margin-bottom:4px;">Van Clief Media LLC, dba Eduba</div>
+        <div style="opacity:0.7;">Veteran-owned AI consulting and training firm</div>
+      </div>
+      <div style="min-width:220px;flex:1;">
+        <div style="color:#ffffff;font-weight:600;margin-bottom:2px;">Matt Creamer, CRO</div>
+        <div style="margin-bottom:10px;"><a href="mailto:thecro@eduba.io" style="color:#dcdcdc;text-decoration:underline;">thecro@eduba.io</a></div>
+        <div style="opacity:0.85;">Founder: Jake Van Clief</div>
+      </div>
+      <div style="min-width:180px;flex:1;">
+        <div style="margin-bottom:4px;"><a href="https://eduba.io" target="_blank" rel="noopener" style="color:#dcdcdc;text-decoration:underline;">eduba.io</a></div>
+        <div style="opacity:0.85;">Palm Coast, FL</div>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid #1f1f1f;opacity:0.62;font-size:12px;line-height:1.55;">
+      This site was custom-built by Eduba as a conference pitch. It is not affiliated with or operated by Homecare Application Inc..
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
